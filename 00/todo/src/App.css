@@ -9,21 +9,24 @@
     --bg-gradient: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
-}
+} */
 
 body {
+  background: var(--bg-gradient);
+  padding: 30px;
+  color: var(--text-primary);
+  background-image :url(./img/bg.png) ;
+  background-size: cover;
+  background-position: center;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--bg-gradient);
     overflow: hidden;
-    color: var(--text-primary);
 }
 .app{
   max-width: 600px;
@@ -32,7 +35,16 @@ body {
   padding: 20px 30px;
   border-radius: 12px;
 }
-
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+h2{
+  margin-top: 10px;
+}
+p{
+  line-height: 1.6;
+}
 /* Background Blobs Animation
 .background-blobs {
     position: absolute;
