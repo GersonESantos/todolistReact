@@ -12,39 +12,35 @@
 
 
 body {
-  background: var(--bg-gradient);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
   padding: 30px;
-  color: var(--text-primary);
-  /* background-image :url(./img/bg.png) ; */
-  background-size: cover;
+  color: var #333;
+  background-image :url(./img/bg.png); 
   background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  background-size: cover;
 }
 .app{
   max-width: 600px;
-  margin: 0 auto;
-  background-color: (--text-secondary);
+  margin: 0 auto 300px;
+  background-color: #efefef;
   padding: 20px 30px;
   border-radius: 12px;
 }
 h1{
   text-align: center;
-  margin-bottom: 20px;
 }
 h2{
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 p{
-  line-height: 1.6;
+  margin: 10px 0;
 }
+
 /* Button */
 Button {
-    background-color: rgb(71, 109, 149);
-    color: white;
+    background-color: #333974;
+    color: #fff;
     padding: 5px 10px;
     border: none;
     border-radius: 3px;
@@ -52,7 +48,7 @@ Button {
     font-size: 1rem;
     opacity: 0.8;
     transition: all 0.3s ease;
-    font-weight: 500;
+    
 } 
 Button:hover {
 
@@ -73,20 +69,30 @@ input, select {
   width: 100%;
 }
 .complete {
-  background-color: white;
+  background-color: #e5eee5;
   text-decoration: line-through;
-  color: gray;
+  color: rgb(26, 25, 25);
 }
 .remove
 {
-  background-color: white;
+  background-color: #efe7e7;
 }
 .todo-list {
   margin-bottom: 20px;
   padding-bottom: 20px;
     border-bottom: 1px solid #555;
 }
+.todo{
+    background-color: rgb(192, 183, 183);
+    box-shadow: #211c4a (0px 50px 100px -20px, 0,10);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+}
 /* .blob {
     position: absolute;
     border-radius: 50%;
