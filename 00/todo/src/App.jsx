@@ -2,9 +2,9 @@ import { useState } from "react";
 
 import Todo from "./components/Todo";
 
-import Search from "./components/Search";
+// import Search from "./components/Search";
 
-import Filter from "./components/Filter";
+// import Filter from "./components/Filter";
 
 import "./App.css";
 import TodoForm from "./components/TodoForm";
