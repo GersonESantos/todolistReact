@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import './App.css'
 
 
 function App() {
@@ -37,7 +37,9 @@ function App() {
             <div className="todo">
               <div className='content'>
                 <p>{todo.text}</p>
-                <p className='category'>{todo.category}</p>
+                <p className='category'>({todo.category})</p>
+                <button>Completar</button>
+                <button>X</button>
               </div>              
               <span>{todo.text} - <em>{todo.category}</em></span>
             </div>
