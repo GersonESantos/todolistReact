@@ -1,7 +1,7 @@
 const Todo = ({ todo, completeTodo, removeTodo }) => {
   return (
     <div
-      className="todo"
+      className="Todo"
       style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
     >
       <div className="content">
