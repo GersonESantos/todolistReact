@@ -26,8 +26,21 @@ function App() {
     }
 
   ])
-  
 
+  const addTodo = (text, category) => {
+  // Cria um novo array, copiando os todos antigos e adicionando o novo no final
+  const newTodos = [
+    ...todos,
+    {
+      id: Math.floor(Math.random() * 10000),
+      text,
+      category,
+      isCompleted: false,
+    },
+  ];
+  // Atualiza o estado com o novo array
+  setTodos(newTodos);
+};
   return (
     
       
@@ -36,12 +49,10 @@ function App() {
         <div className='todo-list'>
           {todos.map((todo) => 
           (
-            <Todo todo={todo}/>
-          )
-        )
-          }
+            <Todo key={todo.id} todo={todo} />
+          ))}
         </div>
-        <TodoForm/>
+        <TodoForm addTodo={addTodo} />
       </div>
     
   )
