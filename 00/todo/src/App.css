@@ -77,7 +77,7 @@ button.complete {
 
 button.remove {
   background-color: #d9534f;
-  color: #fff;
+  color: #ffffff; /* Set text color to white */
 }
 
 input[type="text"], 
